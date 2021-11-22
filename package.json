@@ -1,0 +1,27 @@
+{
+    "name": "aws-component-framework",
+    "version": "1.0.0",
+    "description": "A Test Pattern that tests AWS components in isolation or integration",
+    "main": "",
+    "scripts": {
+        "start": "",
+        "dev": "",
+        "clean": "",
+        "tsc": "",
+        "lint": "",
+        "build": "",
+        "test:comp": "",
+        "test:int": "",
+        "test:si": "",
+        "localstack:up": "docker-compose -f ./docker-compose-local.yml up -d",
+        "localstack:down": "docker-compose -f ./docker-compose-local.yml down",
+        "serverless": ""
+    },
+    "author": "Jason Corbett - Quality Process Tooling",
+    "license": "ISC",
+    "devDependencies": {
+        "ts-loader": "9.2.6",
+        "typescript": "4.5.2",
+        "axios": "0.24.0"
+    }
+}
