@@ -19,10 +19,10 @@ provider:
   runtime: nodejs12.x
 
 
-functions:
-  hello:
-    handler: handler.hello
-    events:
-    - http:
-        path: hello
-        method: get
+  functions:
+    hello:
+      handler: handler.hello
+      events:
+      - http:
+          path: hello
+          method: get
