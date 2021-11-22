@@ -6,7 +6,9 @@
     "description": "A Test Pattern that tests AWS components in isolation or integration",
     "scripts": {
         "localstack:up": "docker-compose -f ./docker-compose-local.yml up -d",
-        "localstack:down": "docker-compose -f ./docker-compose-local.yml down"
+        "localstack:down": "docker-compose -f ./docker-compose-local.yml down",
+        "test": "jest --config=jest.config.test.js",
+        "compile": "tsc -p ./src-ts/tsconfig.json"
     },
     "devDependencies": {
         "aws-sdk": "^2.1012.0",
