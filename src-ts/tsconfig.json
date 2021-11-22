@@ -2,11 +2,6 @@
   "extends": "../tsconfig.base",
   "compilerOptions": {
     "removeComments": true
-  },
-  "include": [
-    "./**/*",
-    "src/**/*",
-    "__test__/**/*"
-  ]
+  }
 
 }

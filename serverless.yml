@@ -3,7 +3,7 @@ service: localstack-lambda
 
 plugins:
   - serverless-localstack
-
+  - serverless-offline
 custom:
   localstack:
     debug: true
