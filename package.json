@@ -24,6 +24,8 @@
         "jest": "^27.3.1",
         "jest-junit": "^13.0.0",
         "serverless": "^2.66.2",
+        "serverless-functions-base-path": "^1.0.32",
+        "serverless-localstack": "^0.4.35",
         "serverless-offline": "^8.3.0",
         "ts-jest": "^27.0.7",
         "ts-loader": "9.2.6",

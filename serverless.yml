@@ -4,13 +4,19 @@ service: localstack-lambda
 plugins:
   - serverless-localstack
   - serverless-offline
+  - serverless-functions-base-path
+
 custom:
+  functionsBasePath: build/src-ts
   localstack:
     debug: true
     stages:
      - local
      - dev
-    endpointFile: localstack_endpoints.json
+  endpoints:
+    GET - http://localhost:4567/restapis/txwn2s2eog/local/_user_request_/v1/request
+
+    
 
 frameworkVersion: '2'
 
@@ -19,10 +25,11 @@ provider:
   runtime: nodejs12.x
 
 
-  functions:
-    hello:
-      handler: handler.hello
-      events:
+functions:
+  lambdaHandler:
+    handler: app.lambdaHandler
+    events:
       - http:
-          path: hello
-          method: get
+         path: lambdaHandler
+         method: get
+         
