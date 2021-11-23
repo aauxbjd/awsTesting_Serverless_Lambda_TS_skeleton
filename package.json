@@ -8,17 +8,20 @@
         "localstack:up": "docker-compose -f ./docker-compose-local.yml up -d",
         "localstack:down": "docker-compose -f ./docker-compose-local.yml down",
         "test": "jest --config=jest.config.test.js",
-        "compile": "tsc -p ./src-ts/tsconfig.json"
+        "integ-test": "jest --config=jest.config.integ.test.js",
+        "compile": "tsc -p ./src-ts/tsconfig.json",
+        "deploy-local": "sls deploy --stage local"
     },
     "devDependencies": {
         "@babel/core": "^7.16.0",
         "@babel/preset-env": "^7.16.4",
         "@babel/preset-typescript": "^7.16.0",
         "@types/aws-lambda": "^8.10.64",
+        "@types/axios": "^0.14.0",
         "@types/jest": "^27.0.3",
         "aws-sdk": "^2.1012.0",
         "aws-sdk-mock": "^5.4.0",
-        "axios": "0.24.0",
+        "axios": "^0.24.0",
         "babel-jest": "^27.3.1",
         "chai": "^4.2.0",
         "jest": "^27.3.1",

@@ -13,9 +13,8 @@ custom:
     stages:
      - local
      - dev
-  endpoints:
-    GET - http://localhost:4567/restapis/txwn2s2eog/local/_user_request_/v1/request
-
+    endpointFile: localstack_endpoints.json
+  
     
 
 frameworkVersion: '2'
